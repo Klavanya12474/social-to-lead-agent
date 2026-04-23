@@ -45,4 +45,34 @@ When the user shows high intent, the agent collects:
 Then executes a mock tool:
 
 ```python
-mock_lead_capture(name, email, platform)
+
+social-to-lead-agent/
+│
+├── app.py
+├── utils.py
+├── knowledge_base.json
+├── requirements.txt
+└── README.md
+
+pip install -r requirements.txt
+
+python app.py
+
+You: Hi
+Agent: Hello! Welcome to AutoStream. How can I help you?
+
+You: Tell me pricing
+Agent: Here are our plans...
+
+You: I want pro plan
+Agent: Please provide your name.
+
+You: Lavanya
+Agent: Please provide your email.
+
+You: lavanya@gmail.com
+Agent: Which creator platform do you use?
+
+You: YouTube
+Lead captured successfully: Lavanya, lavanya@gmail.com, YouTube
+
